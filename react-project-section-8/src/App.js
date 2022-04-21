@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Container from "./components/Container";
-import UserForm from "./components/UserForm";
-import UserList from "./components/UserList";
+import Container from "./components/my-own/Container";
+import UserForm from "./components/my-own/UserForm";
+import UserList from "./components/my-own/UserList";
 import styles from "./main.module.css";
 
 const DUMMY_USERS = [
@@ -11,7 +11,6 @@ const DUMMY_USERS = [
 
 function App() {
   const [users, setUsers] = useState(DUMMY_USERS);
-  const [currentId, setCurrentId] = useState(null);
 
   const addUser = (user) => {
     setUsers((prevUsers) => [...prevUsers, user]);

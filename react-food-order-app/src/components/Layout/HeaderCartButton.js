@@ -5,7 +5,6 @@ import CartIcon from "../Cart/CartIcon";
 
 const HeaderCartButton = (props) => {
   const cartContext = useContext(CartContext);
-
   const numberOfCartItems = cartContext.item.reduce((curNumber, item) => {
     return curNumber + item.amount;
   }, 0);
